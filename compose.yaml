@@ -2,7 +2,7 @@ services:
   server:
     build:
       context: .
-      image: us-central1-docker.pkg.dev/dulcet-asset-448300-k9/nilay-100964543/assignment2
+    image: us-central1-docker.pkg.dev/dulcet-asset-448300-k9/nilay-100964543/assignment2
     environment:
       NODE_ENV: production
     ports:
