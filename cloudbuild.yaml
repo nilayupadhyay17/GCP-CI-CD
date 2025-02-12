@@ -1,7 +1,9 @@
 steps:
   # Docker Build
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['compose', 'build', '--file', 'compose.yaml']
+    args: ['build', '-t', 
+           'us-central1-docker.pkg.dev/dulcet-asset-448300-k9/nilay-100964543/assignment2:${SHORT_SHA}', 
+           '.']
 
   # Docker Push
   - name: 'gcr.io/cloud-builders/docker'
