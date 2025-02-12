@@ -1,7 +1,7 @@
 steps:
   # Docker Build
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['compose', '-f', 'compose.yaml', 'build']
+    args: ['compose', 'build', '--file', 'compose.yaml']
 
   # Docker Push
   - name: 'gcr.io/cloud-builders/docker'
